@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    tools:context="com.example.keshavaggarwal.olaplaystudios.PortfolioActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Work Experience"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="@dimen/cardview_default_radius"
+            app:cardElevation="@dimen/cardview_default_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.example.keshavaggarwal.olaplaystudios.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Doctor Coder Limited"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <com.example.keshavaggarwal.olaplaystudios.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:padding="8dp"
+                    android:text="Worked for the UK based startup, building a social app “GRIPER” which enables residents to report issues and communicate with local council directly.\n\n
+● Worked on building new features and fixing bugs with the existing features.\n
+● Worked with Android Design Patterns, Architecture like MVP.\n
+● Reactive Programming with the use of RxJava,RxAndroid
+implementation. Dependency injection using Dagger 2.0.\n
+● Worked with Firebase Real Time Database, Google Maps API etc."
+                    app:font="@integer/OPEN_SANS_REGULAR" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="@dimen/cardview_default_radius"
+            app:cardElevation="@dimen/cardview_default_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.example.keshavaggarwal.olaplaystudios.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Cuvora"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <com.example.keshavaggarwal.olaplaystudios.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Worked for Cuvora. It is the leading car info search application in Android and iOS. It currently has over Million installs and 4.5+ rating on both the platforms.\n\n
+● Developed the “DISCOVER CARS” module from scratch which is live on Google play store and is used by 30k-50k users daily.\n
+● Worked on sketch to design the UI of mobile apps.\n
+● Worked on Analytics and Cloud Messaging in Android using Firebase and Fabric."
+                    app:font="@integer/OPEN_SANS_REGULAR" />
+
+                <com.example.keshavaggarwal.olaplaystudios.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:id="@+id/tvLinkToCuvora"
+                    android:text="@string/link_to_cuvora_app"
+                    android:textColor="@color/colorPrimary"
+                    app:font="@integer/OPEN_SANS_REGULAR" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Project"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="@dimen/cardview_default_radius"
+            app:cardElevation="@dimen/cardview_default_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.example.keshavaggarwal.olaplaystudios.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Movies and TvShows Android app"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <com.example.keshavaggarwal.olaplaystudios.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:padding="8dp"
+                    android:text="Made an Android application which shows all the details of Movies and TV Shows ie, cast, reviews, in app trailers etc. Used the TMDB APIs for data. Made complex, dynamic UI which make it different from others.
+"
+                    app:font="@integer/OPEN_SANS_REGULAR" />
+
+
+                <com.example.keshavaggarwal.olaplaystudios.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:id="@+id/tvLinkToGithub"
+                    android:text="@string/link_to_github_project"
+                    android:textColor="@color/colorPrimary"
+                    app:font="@integer/OPEN_SANS_REGULAR" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>

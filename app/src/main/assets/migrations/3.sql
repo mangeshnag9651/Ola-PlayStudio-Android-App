@@ -1,0 +1,1 @@
+ALTER TABLE activity_history_data ADD COLUMN isDownloaded INTEGER;

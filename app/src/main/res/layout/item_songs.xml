@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvSongs"
+        app:cardCornerRadius="3dp"
+        app:elevation="@dimen/cardview_default_elevation"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="120dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/llupperCard"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivSongCoverImage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="3">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <com.example.keshavaggarwal.olaplaystudios.widgets.CustomTextView
+                            android:id="@+id/tvSongName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Afreen Afreen"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp"
+                            app:font="@integer/OPEN_SANS_REGULAR" />
+
+                        <com.example.keshavaggarwal.olaplaystudios.widgets.CustomTextView
+                            android:id="@+id/tvArtists"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_marginTop="5dp"
+                            android:text="Rahat Fateh Ali Khan, Momina Mustehsan"
+                            app:font="@integer/OPEN_SANS_REGULAR" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1.1">
+
+                    <ImageButton
+                        android:id="@+id/ibPlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_play3" />
+
+                    <ProgressBar
+                        android:layout_width="24dp"
+                        android:id="@+id/pbPlayButton"
+                        android:visibility="gone"
+                        android:layout_centerVertical="true"
+                        android:padding="2dp"
+                        android:layout_height="24dp" />
+
+                    <ImageButton
+                        android:id="@+id/ibStop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@null"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_stop2" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/divider"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/llupperCard"
+                android:alpha="0.4"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/divider">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ibLike"
+                android:padding="6dp"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:clickable="true"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_heart"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentEnd="true" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ibDownload"
+                    android:padding="6dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:layout_marginLeft="16dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_cloud_download"
+                    android:layout_marginStart="16dp"
+                    android:layout_alignParentStart="true" />
+
+                <com.example.keshavaggarwal.olaplaystudios.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="DOWNLOADED"
+                    app:font = "@integer/OPEN_SANS_REGULAR"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorAccent"
+                    android:visibility="gone"
+                    android:id="@+id/tvDownloaded"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_alignParentStart="true"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

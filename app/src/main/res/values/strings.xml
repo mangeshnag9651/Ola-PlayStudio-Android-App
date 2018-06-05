@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ola Play Studios</string>
+
+    <string name="string_error_no_network">No Network, please check your network settings</string>
+
+    <string name="link_to_cuvora_app">
+        <a href="https://play.google.com/store/apps/details?id=com.cuvora.carinfo">View it on Play Store</a></string>
+    <string name="link_to_github_project">
+        <a href="https://github.com/KeshavAggarwal/Movies-TVShows-Android-App">View it on Github</a>
+    </string>
+
+    <string name="empty_playlist">No songs are currently available in Playlist.</string>
+    <string name="empty_history">No History available.</string>
+</resources>

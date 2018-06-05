@@ -1,0 +1,1 @@
+ALTER TABLE songs_data ADD COLUMN isDownloaded INTEGER;
