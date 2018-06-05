@@ -1,7 +1,7 @@
 # Ola-Play-Studio-Android-App
 An Android application which i made as a part of Assignment for Ola Play Android Hiring Challenge held on Hackerearth. This project of mine got shortlisted, but nothing happened after that. :) Still we can enjoy some coke studio songs here.
 
-#Screenshots
+# Screenshots
 <table>
 	<tr><td><img src="https://github.com/KeshavAggarwal/Ola-PlayStudio-Android-App/blob/master/screenshots/Screenshot_1513805137.png"></td>
 	<td><img src="https://github.com/KeshavAggarwal/Ola-PlayStudio-Android-App/blob/master/screenshots/Screenshot_1513805243.png"></td>
