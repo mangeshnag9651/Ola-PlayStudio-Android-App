@@ -19,7 +19,7 @@ steps:
   displayName: 'Run a multi-line script'
 - task: Gradle@3
   inputs:
-    gradleWrapperFile: 'application/SmartHomeApplication/gradlew'
+    gradleWrapperFile: ''
     tasks: 'build'
     publishJUnitResults: false
     javaHomeOption: 'JDKVersion'
